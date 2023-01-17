@@ -69,6 +69,7 @@ variable "virtual_network_subnet_ids" {
   default     = []
   description = "List of subnet resource IDs to add to ACL"
 }
+
 variable "log_analytics_workspace_name" {
   type        = string
   description = "Name of Log Analytics Workspace to send diagnostics"
