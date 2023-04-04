@@ -1,4 +1,6 @@
 resource "azurerm_key_vault" "key_vault" {
+  #checkov:skip=CKV_AZURE_189:Private endpoint later
+  #checkov:skip=CKV2_AZURE_32:Private endpoint later
   name                            = var.key_vault_name
   location                        = var.location
   resource_group_name             = var.resource_group_name
